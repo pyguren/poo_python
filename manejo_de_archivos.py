@@ -1,32 +1,32 @@
-# import shutil
-# import os
-# f = open('archivo.txt', 'w')
-# f.write('soy un mensaje secreto simple')
-# f.write('\n')
-# f.write('continuacion de mensaje secreto')
-# f.write('\n')
-# f.write('final de mensaje secreto')
-# f.close()
+import shutil
+import os
+f = open('archivo.txt', 'w')
+f.write('soy un mensaje secreto simple')
+f.write('\n')
+f.write('continuacion de mensaje secreto')
+f.write('\n')
+f.write('final de mensaje secreto')
+f.close()
 
-# # ////////////////para leer el archivo.txt en consola////////////////
+# ////////////////para leer el archivo.txt en consola////////////////
 
-# f = open('archivo.txt', 'r')
-# print(f.read())
-# f.close()
+f = open('archivo.txt', 'r')
+print(f.read())
+f.close()
 
 # /////////////modificar y crear txt, borrar y crear/////////////////
 
-# existe = os.path.exists('prueba')
-# path_dir_nmame = 'prueba'
+existe = os.path.exists('prueba')
+path_dir_nmame = 'prueba'
 
-# if existe:
-#     # os.rmdir(path_dir_name)
-#     shutil.rmtree('prueba')
-#     print('existe')
-# else:
-#     os.mkdir('prueba')
-#     os.mkdir('prueba/interno')
-#     print('no existe')
+if existe:
+    # os.rmdir(path_dir_name)
+    shutil.rmtree('prueba')
+    print('existe')
+else:
+    os.mkdir('prueba')
+    os.mkdir('prueba/interno')
+    print('no existe')
 
 
 # 1 path / ruta
@@ -48,27 +48,24 @@
 # crear una funcion que me permita mostrar una multiplicacion de 5 numeros
 # y enviar el resultado dentro de una archivo llamado operaciones.txt.
 
-# import shutil
-# import os
+
+def foo():
+    def r(x): return x * 10 * 3 * 8 * 2 * 1
+    return r
 
 
-# def foo():
-#     def r(x): return x * 10 * 3 * 8 * 2 * 1
-#     return r
+v = foo()(10)
+os.rmdir
 
 
-# v = foo()(10)
-# os.rmdir
+os.mkdir('operaciones.txt')
+print('existe')
+existe = os.path.exists('operaciones.txt')
+print(v)
 
-
-# os.mkdir('operaciones.txt')
-# print('existe')
-# # existe = os.path.exists('operaciones.txt')
-# print(v)
-
-# f = open('operaciones.txt')
-# print(f.read())
-# f.close()
+f = open('operaciones.txt')
+print(f.read())
+f.close()
 
 
 def multiplicacion(n1, n2, n3, n4, n5): return n1*n2*n3*n4*n5
